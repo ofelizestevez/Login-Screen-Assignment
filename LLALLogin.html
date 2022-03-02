@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="LLALLogin.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-image">
+            <img src="LLALLogin\jared-muller-EkhWxU_pgLo-unsplash.jpg" alt="">
+        </div>
+        <div class="login">
+            <h1>Log In</h1>
+            <form action="">
+                <div class="input-container">
+                    <div class="horizontal-tab">
+                        <div class="vertical-tab">
+                            <p class="required">First Name</p>
+                            <input type="text" id="first">
+                        </div>
+                        <div></div>
+                        <div class="vertical-tab">
+                            <p class="required">Last Name</p>
+                            <input type="text" id="last">
+                        </div>
+                    </div>
+                    <div class="vertical-tab">
+                        <p id="Email-Address">Email Address</p>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="vertical-tab">
+                        <p class="required">Password</p>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="vertical-tab">
+                        <p class="required">ID Number</p>
+                        <input type="text" id="id">
+                    </div>
+                    <div class="vertical-tab">
+                        <p class="required">Phone Number</p>
+                        <input type="text" class="input" id="phone-number">
+                    </div>
+                    <div class="horizontal-tab-flex">
+                        <input type="checkbox" name="email-confirmation" id="email-confirmation">
+                        <p>Check the box to request email confirmation</p>
+                    </div>
+                    <div class="horizontal-tab-flex">
+                        <p> Select a Transaction</p>
+                        <select name="transaction" id="transaction">
+                            <option value="Search A Landscaper's Account">Search a Landscaper's Account</option>
+                            <option value="Book A Customer's Appointment">Book a Customer's Appointment</option>
+                            <option value="Place A Customer's Order">Place a Customer's Order</option>
+                            <option value="Update A Customer's Order">Update a Customer's Order</option>
+                            <option value="Cancel A Customer's Appointmnet">Cancel A Customer's Appointmnet</option>
+                            <option value="Cancel A Customer's Order">Cancel A Customer's Order</option>
+                            <option value="Create A New Customer Account">Create A New Customer Account</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="validation()" class="submit">Submit</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <script src="LLALLogin.js"></script>
+</body>
+</html>
